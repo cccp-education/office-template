@@ -1,0 +1,137 @@
+= Office Template — Directives Agent
+:toc: left
+:toclevels: 3
+:icons: font
+:sectnums:
+
+[CAUTION]
+====
+**ARRÊT OBLIGATOIRE** avant `rm`, `Write` (écrasement), ou suppression de fichier :
+1. LIRE le fichier en entier
+2. VÉRIFIER `git ls-files -- <fichier>`
+3. DEMANDER confirmation fichier par fichier à l'utilisateur
+4. ATTENDRE "oui" avant d'agir
+====
+
+== Avertissement — Racine de Travail
+
+**Ce fichier est dans `office-template/`**, la racine de travail et repo git.
+C'est un repo standalone, pas un sous-projet d'un mono-repo parent.
+
+* Les chemins sont relatifs à **`office-template/`**
+* L'agent travaille depuis **`office-template/`**
+* Repo GitHub : `cccp-education/office` (remote origin)
+* Licence : CC0-1.0 (domaine public)
+
+== Projet
+
+**Nom** : office-template — squelette de projet bureau/formation/éducation
+**Stack** : Aucune (repo documentaire)
+**DAG** : hors DAG (contenu, pas de code)
+**Documentation** : AsciiDoc
+
+=== Objectif
+
+Template standardisé pour les projets éducatifs de l'organisation cccp-education.
+Structure de dossiers pré-établie pour : livres, données, formations, notebooks,
+sites web, slides, schémas, pilotage.
+
+=== Contexte — Cercles de Confiance
+
+Ce projet vit dans `foundry/public/office-template/` → *cercle 4 (public, CC0)*.
+- Domaine public, pas de restriction
+- Voir `configuration/.agents/AGENT_GOVERNANCE.adoc` pour l'ontologie spatiale
+
+== Règles Absolues
+
+=== Git
+
+**INTERDICTION FORMELLE** de commit/push/merge sans permission explicite.
+Autorisé : `git status`, `git diff`, `git log`, `git show`
+Interdit : `git add`, `git commit`, `git push`, `git merge`, `git rebase`
+
+=== Fichiers de configuration — RÈGLE ABSOLUE DE SÛRETÉ
+
+Backup avant modif fichier non tracké. Préserver valeurs sensibles. Privilégier edit partiel.
+
+=== Fichiers personnels — Interdiction de modifier
+
+L'agent NE DOIT JAMAIS modifier `~/.gitconfig`, `~/.bashrc`, `~/.ssh/config`, `~/.zshrc`, etc.
+
+=== Méthodologie de Travail
+
+* **1 fichier à la fois**
+* **Contexte léger** : Maximum 50k tokens EAGER
+* **Règle d'or** : 5x20min > 1x2h
+
+== Architecture du Projet
+
+[source,bash]
+----
+office-template/                     # ⭐ RACINE DE TRAVAIL + REPO GIT
+├── AGENT.adoc                       # Directives agent (ce fichier)
+├── PROMPT_REPRISE.adoc              # Mission session en cours
+├── opencode.json                    # Config opencode
+├── README.adoc                      # Documentation projet
+├── LICENSE                          # CC0-1.0
+├── .agents/                         # Gouvernance
+│   ├── INDEX.adoc
+│   ├── SESSIONS_HISTORY.adoc
+│   ├── SESSION_CHECKLIST.adoc
+│   ├── sessions/
+│   ├── archives/
+│   └── encyclopedies/
+├── books-collection/                # Livres
+├── data/postgresql/                 # Schémas PostgreSQL
+├── data-engineering/json-schemas/   # Schémas JSON
+├── data-engineering/llms/           # Ressources LLM
+├── formations/                      # Supports de formation
+├── metiers/                         # Fiches métiers
+├── notebooks/                       # Jupyter notebooks
+├── pilotage/                        # Indicateurs, dashboard
+├── private/                         # Contenu restreint
+├── schemas/                         # Schémas techniques
+├── sites/                           # Sites web JBake
+└── slides/                          # Présentations
+----
+
+=== Commandes Utiles
+
+[source,shell]
+----
+git status
+git log --oneline -10
+----
+
+== Gestion du Contexte
+
+* **`PROMPT_REPRISE.adoc`** → mission session en cours
+* **`.agents/INDEX.adoc`** → roadmap
+
+== Session Procedure
+
+=== Début de Session
+
+1. Lire `PROMPT_REPRISE.adoc`
+2. Lire `.agents/INDEX.adoc`
+3. `git status`
+
+=== Fin de Session — 6 étapes obligatoires
+
+1. Rapport de session → `.agents/sessions/{N}-{sujet}.adoc`
+2. Mise à jour `PROMPT_REPRISE.adoc` (max 70 lignes)
+3. Mise à jour `INDEX.adoc`
+4. Mise à jour `SESSIONS_HISTORY.adoc`
+5. Mise à jour `archives/COMPLETED_TASKS_ARCHIVE.adoc`
+6. Vérification git status
+
+== Anti-Patterns
+
+[cols="1,3,3"]
+|===
+| # | Anti-pattern | Correction
+| 1 | **Agent sans opencode.json** | `opencode.json` AVANT AGENT.adoc
+| 2 | **PROMPT_REPRISE fantôme** | Mise à jour obligatoire
+| 3 | **Archive vide** | Jamais de "TODO"
+| 4 | **Session trop longue** | Splitter
+|===

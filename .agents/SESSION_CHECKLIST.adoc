@@ -1,0 +1,22 @@
+= SESSION_CHECKLIST — office-template
+
+== Hook d'Ouverture
+
+. [ ] `PROMPT_REPRISE.adoc`
+. [ ] `AGENT.adoc`
+. [ ] `.agents/INDEX.adoc`
+. [ ] `git status`
+
+== Pendant la session
+
+. [ ] AUCUN commit sans permission
+. [ ] backup avant modif fichiers config
+
+== Hook de Fermeture — 6 étapes
+
+. [ ] 1. `.agents/sessions/NNN-sujet.adoc`
+. [ ] 2. `PROMPT_REPRISE.adoc`
+. [ ] 3. `INDEX.adoc`
+. [ ] 4. `SESSIONS_HISTORY.adoc`
+. [ ] 5. `archives/COMPLETED_TASKS_ARCHIVE.adoc`
+. [ ] 6. `git status`

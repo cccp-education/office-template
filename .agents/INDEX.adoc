@@ -1,0 +1,58 @@
+= INDEX — Office Template
+:toc:
+
+_Règles absolues_ : voir `AGENT.adoc`
+_Projet_ : office-template — squelette projet éducatif cccp-education (CC0-1.0)
+_Ontologie spatiale_ : voir `configuration/.agents/AGENT_GOVERNANCE.adoc`
+
+_Création gouvernance_ : 2026-05-12 (Session 000 — Bootstrap)
+_Session en cours_ : 000 — Bootstrap gouvernance agent
+
+'''
+== RÈGLES ABSOLUES (résumé)
+
+=== 1. COMMITS/GIT — INTERDICTION FORMELLE
+=== 2. FICHIERS DE CONFIG — BACKUP AVANT MODIF
+=== 3. 6 ÉTAPES FIN DE SESSION
+
+'''
+== Architecture
+
+[source]
+----
+office-template/                     # ⭐ RACINE DE TRAVAIL + REPO GIT (standalone)
+├── AGENT.adoc / PROMPT_REPRISE / opencode.json
+├── README.adoc / LICENSE (CC0-1.0)
+├── .agents/                         # GOUVERNANCE
+└── 12 dossiers vides               # books-collection, data, formations, etc.
+----
+
+'''
+== Roadmap
+
+|===
+| EPIC | Description | Statut
+| OFC-0 | Bootstrap gouvernance agent | ✅ (session 000)
+| OFC-1 | Remplir README.adoc (description, usage, conventions) | À FAIRE
+| OFC-2 | Ajouter .gitignore standard | À FAIRE
+| OFC-3 | Documenter chaque dossier (mini-README par sous-dossier) | À FAIRE
+|===
+
+'''
+== Sessions
+
+|===
+| # | Date | Type | Sujet | Score
+| 000 | 2026-05-12 | governance | Bootstrap gouvernance agent | 10/10
+|===
+
+'''
+== Portefeuille
+
+|===
+| Projet | Chemin | DAG | Sessions
+| cheroliv.com | `office/sites/cheroliv.com/` | hors DAG | 17+
+| magic-stick site | `office/sites/magic-stick/` | N2 (data) | 4
+| edster | `office/pilotage/edster/` | hors DAG | 4+
+| office-template | `.` | hors DAG | 0
+|===

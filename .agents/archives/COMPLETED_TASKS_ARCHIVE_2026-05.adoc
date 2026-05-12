@@ -1,0 +1,6 @@
+= Completed Tasks Archive — Mai 2026
+
+|===
+| Date | Session | EPIC/US | Description
+| 2026-05-12 | 000 | OFC-0 | Bootstrap gouvernance agent office-template. Création opencode.json, AGENT.adoc, PROMPT_REPRISE.adoc, .agents/INDEX.adoc, SESSION_CHECKLIST.adoc, SESSIONS_HISTORY.adoc, COMPLETED_TASKS_ARCHIVE_2026-05.adoc.
+|===

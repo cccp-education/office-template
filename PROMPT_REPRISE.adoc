@@ -1,0 +1,42 @@
+= PROMPT_REPRISE — Session 000 — Office Template
+:author: cheroliv + opencode (deepseek-v4-pro)
+:date: 2026-05-12
+:session: 000
+
+[abstract]
+Amorçage gouvernance agent. Repo template CC0-1.0 de l'organisation cccp-education.
+Structure de dossiers vide, prête à être clonée pour de nouveaux projets éducatifs.
+
+== Ce qui existe déjà
+
+- Structure de 12 dossiers vides (books-collection, data, formations, etc.)
+- LICENSE CC0-1.0
+- README.adoc (vide)
+- 3 commits, branch master, remote cccp-education/office.git
+
+== Mission du Jour — Session 000
+
+=== Objectif unique : Bootstrap gouvernance agent
+
+. opencode.json
+. AGENT.adoc (~130 lignes)
+. PROMPT_REPRISE.adoc (ce fichier)
+. .agents/INDEX.adoc
+. .agents/SESSION_CHECKLIST.adoc
+. .agents/SESSIONS_HISTORY.adoc
+. .agents/archives/COMPLETED_TASKS_ARCHIVE_2026-05.adoc
+
+== Roadmap future
+
+- OFC-1 : Remplir README.adoc (description, usage, conventions)
+- OFC-2 : Ajouter .gitignore standard
+- OFC-3 : Documenter chaque dossier (mini-README par sous-dossier)
+
+== Rappel — Règles Globales
+
+. Aucun commit sans permission explicite
+. Zéro secret/token dans le code
+
+[.text-right]
+*PROMPT_REPRISE créé le 12 mai 2026 — Session 000 Bootstrap Gouvernance.*
+*Prochaine session : 001 — OFC-1 Documentation README.*
