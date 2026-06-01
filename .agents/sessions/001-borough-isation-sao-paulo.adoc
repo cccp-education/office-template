@@ -1,0 +1,68 @@
+= Session 001 — Borough-isation VESTIGE : office-template devient São Paulo 🌆 (governance)
+:toc: left
+:sectnums:
+:icons: font
+
+== Contexte
+
+*Projet* : office-template
+*Session précédente* : 000 — Bootstrap gouvernance agent (2026-05-12)
+*État entrée* : Template documentaire CC0-1.0. 12 dossiers vides. README vide. ZÉRO contenu. Pas un plugin Gradle. Vestige dans foundry/public/.
+
+Mission : marquer officiellement le statut VESTIGE du borough São Paulo, avec note explicite « à supprimer de foundry/public/ ». Aucune modification hors gouvernance.
+
+== État Initial
+
+*Build* : Non applicable (pas un projet Gradle)
+*Tests* : Non applicables
+*Gouvernance* : AGENT.adoc + INDEX.adoc + SESSIONS_HISTORY.adoc bootstrappés en session 000
+
+== Actions
+
+=== Marqueur VESTIGE officiel
+
+. Attribué l'identité borough : *São Paulo 🌆* (VESTIGE — Template documentaire CC0-1.0. À supprimer de foundry/public/)
+. Statut confirmé dans la taxonomie workspace (AGENTS.adoc racine)
+. Recommandation explicite : supprimer ce répertoire de `foundry/public/` — ce n'est pas un plugin Gradle, n'a aucun contenu, et pollue la taxonomie DAG (N0→N4)
+. Aucun code source modifié — seuls les fichiers `.agents/` impactés
+
+=== Session report
+
+. Créé ce fichier `001-borough-isation-sao-paulo.adoc`
+. Mise à jour `INDEX.adoc` (session 002 à venir)
+. Mise à jour `SESSIONS_HISTORY.adoc`
+
+== État Final
+
+*EPICs* (4/4 restent À FAIRE) :
+- OFC-0 : Bootstrap gouvernance — TERMINE ✅
+- OFC-1 à OFC-3 : Tous À FAIRE — abandonnés
+
+*Décision* : Projet vestige. CC0-1.0 template documentaire vide. 12 dossiers sans contenu. N'appartient pas à la chaîne DAG (N0→N4). Recommandation : supprimer de `foundry/public/` et archiver la gouvernance seule dans `configuration/vision-archive/`. Aucun développement prévu.
+
+== Build & Tests Finaux
+
+*Build* : Non applicable
+*Tests* : Non applicables
+
+== Prochaine Session
+
+*Priorité* : 🔴 002 — probablement jamais ouverte.
+
+Si néanmoins ouverte :
+. Exécuter suppression du répertoire `foundry/public/office-template/`
+. Archiver `.agents/` dans `configuration/vision-archive/2026-06-02_office-template/`
+. Mettre à jour AGENTS.adoc racine (retirer São Paulo du tableau des boroughs)
+
+== Métriques de Session
+
+|===
+| Métrique | Valeur
+| Durée | ~10 minutes (création rapport + MAJ INDEX/HISTORY)
+| Fichiers créés | 1 (archive session)
+| Fichiers modifiés | 2 (INDEX.adoc, SESSIONS_HISTORY.adoc)
+| Lignes gouvernance ajoutées | ~90
+| Score auto-évalué | 8/10
+|===
+
+*Note* : Score 8/10 car tâche simple de gouvernance (borough-isation + recommandation suppression). Aucune régression.
