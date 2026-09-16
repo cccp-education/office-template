@@ -46,9 +46,8 @@ Ce projet vit dans `foundry/public/office-template/` → *cercle 4 (public, CC0)
 
 === Git
 
-**INTERDICTION FORMELLE** de commit/push/merge sans permission explicite.
+* Commit/push/merge autorisés (décision pilote 2026-09-17 — suppression de l'interdiction formelle). Ne JAMAIS commiter de secret.
 Autorisé : `git status`, `git diff`, `git log`, `git show`
-Interdit : `git add`, `git commit`, `git push`, `git merge`, `git rebase`
 
 === Fichiers de configuration — RÈGLE ABSOLUE DE SÛRETÉ
 
