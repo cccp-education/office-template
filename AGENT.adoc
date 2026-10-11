@@ -38,7 +38,7 @@ sites web, slides, schémas, pilotage.
 
 === Contexte — Cercles de Confiance
 
-Ce projet vit dans `foundry/public/office-template/` → *cercle 4 (public, CC0)*.
+Ce projet vit dans `foundry/public/office-template/` → *cercle 4 (public, Apache-2.0)*.
 - Domaine public, pas de restriction
 - Voir `configuration/.agents/AGENT_GOVERNANCE.adoc` pour l'ontologie spatiale
 

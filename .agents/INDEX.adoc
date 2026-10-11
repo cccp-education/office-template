@@ -2,7 +2,7 @@
 :toc:
 
 _Règles absolues_ : voir `AGENT.adoc`
-_Projet_ : office-template — squelette projet éducatif cccp-education (CC0-1.0)
+_Projet_ : office-template — squelette projet éducatif cccp-education (Apache-2.0)
 _Ontologie spatiale_ : voir `configuration/.agents/AGENT_GOVERNANCE.adoc`
 
 _Création gouvernance_ : 2026-05-12 (Session 000 — Bootstrap)
